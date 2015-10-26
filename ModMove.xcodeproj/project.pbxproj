@@ -68,17 +68,17 @@
 		C27E73191BD9FFB00058FDD0 /* ModMove */ = {
 			isa = PBXGroup;
 			children = (
-				C27E73271BD9FFD30058FDD0 /* Resources */,
-				C298327E1BDA160700852252 /* AXValue+Helper.swift */,
 				C27E732C1BDA06A90058FDD0 /* AccessibilityElement.swift */,
 				C2FA55D01BDDA7A30040373D /* AccessibilityHelper.swift */,
 				C27E731A1BD9FFB00058FDD0 /* AppDelegate.swift */,
+				C298327E1BDA160700852252 /* AXValue+Helper.swift */,
 				C2FA55D21BDDA9B00040373D /* LoginAlert.swift */,
 				C2FA55CD1BDDA6A50040373D /* LoginController.h */,
 				C2FA55CE1BDDA6A50040373D /* LoginController.m */,
 				C27E732E1BDA08810058FDD0 /* Mouse.swift */,
 				C27E732A1BDA055E0058FDD0 /* Mover.swift */,
 				C27E73281BD9FFE70058FDD0 /* Observer.swift */,
+				C27E73271BD9FFD30058FDD0 /* Resources */,
 			);
 			path = ModMove;
 			sourceTree = "<group>";
