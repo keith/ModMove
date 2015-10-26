@@ -11,3 +11,7 @@ There are 2 things ModMove can do:
    then move the mouse
 2. To resize the window under the cursor, hold Control (⌃) and Option
    (⌥) and Shift (⇧), then move the mouse.
+
+## Example
+
+![](https://raw.githubusercontent.com/keith/ModMove/gh-pages/modmove.gif)
