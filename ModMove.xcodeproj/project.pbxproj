@@ -1,0 +1,327 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C27E731B1BD9FFB00058FDD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E731A1BD9FFB00058FDD0 /* AppDelegate.swift */; };
+		C27E731D1BD9FFB00058FDD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C27E731C1BD9FFB00058FDD0 /* Assets.xcassets */; };
+		C27E73201BD9FFB00058FDD0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C27E731E1BD9FFB00058FDD0 /* MainMenu.xib */; };
+		C27E73291BD9FFE70058FDD0 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E73281BD9FFE70058FDD0 /* Observer.swift */; };
+		C27E732B1BDA055E0058FDD0 /* Mover.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E732A1BDA055E0058FDD0 /* Mover.swift */; };
+		C27E732D1BDA06A90058FDD0 /* AccessibilityElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E732C1BDA06A90058FDD0 /* AccessibilityElement.swift */; };
+		C27E732F1BDA08810058FDD0 /* Mouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E732E1BDA08810058FDD0 /* Mouse.swift */; };
+		C298327F1BDA160700852252 /* AXValue+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C298327E1BDA160700852252 /* AXValue+Helper.swift */; };
+		C2FA55CF1BDDA6A50040373D /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2FA55CE1BDDA6A50040373D /* LoginController.m */; };
+		C2FA55D11BDDA7A30040373D /* AccessibilityHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FA55D01BDDA7A30040373D /* AccessibilityHelper.swift */; };
+		C2FA55D31BDDA9B00040373D /* LoginAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FA55D21BDDA9B00040373D /* LoginAlert.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C27E73171BD9FFB00058FDD0 /* ModMove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModMove.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C27E731A1BD9FFB00058FDD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C27E731C1BD9FFB00058FDD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C27E731F1BD9FFB00058FDD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C27E73211BD9FFB00058FDD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C27E73281BD9FFE70058FDD0 /* Observer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		C27E732A1BDA055E0058FDD0 /* Mover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mover.swift; sourceTree = "<group>"; };
+		C27E732C1BDA06A90058FDD0 /* AccessibilityElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessibilityElement.swift; sourceTree = "<group>"; };
+		C27E732E1BDA08810058FDD0 /* Mouse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mouse.swift; sourceTree = "<group>"; };
+		C298327E1BDA160700852252 /* AXValue+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AXValue+Helper.swift"; sourceTree = "<group>"; };
+		C2FA55C91BDDA0BB0040373D /* ModMove-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ModMove-Bridging-Header.h"; sourceTree = "<group>"; };
+		C2FA55CD1BDDA6A50040373D /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
+		C2FA55CE1BDDA6A50040373D /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
+		C2FA55D01BDDA7A30040373D /* AccessibilityHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessibilityHelper.swift; sourceTree = "<group>"; };
+		C2FA55D21BDDA9B00040373D /* LoginAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginAlert.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C27E73141BD9FFB00058FDD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C27E730E1BD9FFB00058FDD0 = {
+			isa = PBXGroup;
+			children = (
+				C27E73191BD9FFB00058FDD0 /* ModMove */,
+				C27E73181BD9FFB00058FDD0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C27E73181BD9FFB00058FDD0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C27E73171BD9FFB00058FDD0 /* ModMove.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C27E73191BD9FFB00058FDD0 /* ModMove */ = {
+			isa = PBXGroup;
+			children = (
+				C27E73271BD9FFD30058FDD0 /* Resources */,
+				C298327E1BDA160700852252 /* AXValue+Helper.swift */,
+				C27E732C1BDA06A90058FDD0 /* AccessibilityElement.swift */,
+				C2FA55D01BDDA7A30040373D /* AccessibilityHelper.swift */,
+				C27E731A1BD9FFB00058FDD0 /* AppDelegate.swift */,
+				C2FA55D21BDDA9B00040373D /* LoginAlert.swift */,
+				C2FA55CD1BDDA6A50040373D /* LoginController.h */,
+				C2FA55CE1BDDA6A50040373D /* LoginController.m */,
+				C27E732E1BDA08810058FDD0 /* Mouse.swift */,
+				C27E732A1BDA055E0058FDD0 /* Mover.swift */,
+				C27E73281BD9FFE70058FDD0 /* Observer.swift */,
+			);
+			path = ModMove;
+			sourceTree = "<group>";
+		};
+		C27E73271BD9FFD30058FDD0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C27E731C1BD9FFB00058FDD0 /* Assets.xcassets */,
+				C27E73211BD9FFB00058FDD0 /* Info.plist */,
+				C27E731E1BD9FFB00058FDD0 /* MainMenu.xib */,
+				C2FA55C91BDDA0BB0040373D /* ModMove-Bridging-Header.h */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C27E73161BD9FFB00058FDD0 /* ModMove */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C27E73241BD9FFB00058FDD0 /* Build configuration list for PBXNativeTarget "ModMove" */;
+			buildPhases = (
+				C27E73131BD9FFB00058FDD0 /* Sources */,
+				C27E73141BD9FFB00058FDD0 /* Frameworks */,
+				C27E73151BD9FFB00058FDD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ModMove;
+			productName = ModMove;
+			productReference = C27E73171BD9FFB00058FDD0 /* ModMove.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C27E730F1BD9FFB00058FDD0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = smileykeith;
+				TargetAttributes = {
+					C27E73161BD9FFB00058FDD0 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = C27E73121BD9FFB00058FDD0 /* Build configuration list for PBXProject "ModMove" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C27E730E1BD9FFB00058FDD0;
+			productRefGroup = C27E73181BD9FFB00058FDD0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C27E73161BD9FFB00058FDD0 /* ModMove */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C27E73151BD9FFB00058FDD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C27E731D1BD9FFB00058FDD0 /* Assets.xcassets in Resources */,
+				C27E73201BD9FFB00058FDD0 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C27E73131BD9FFB00058FDD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2FA55CF1BDDA6A50040373D /* LoginController.m in Sources */,
+				C298327F1BDA160700852252 /* AXValue+Helper.swift in Sources */,
+				C2FA55D31BDDA9B00040373D /* LoginAlert.swift in Sources */,
+				C27E731B1BD9FFB00058FDD0 /* AppDelegate.swift in Sources */,
+				C27E732F1BDA08810058FDD0 /* Mouse.swift in Sources */,
+				C2FA55D11BDDA7A30040373D /* AccessibilityHelper.swift in Sources */,
+				C27E73291BD9FFE70058FDD0 /* Observer.swift in Sources */,
+				C27E732D1BDA06A90058FDD0 /* AccessibilityElement.swift in Sources */,
+				C27E732B1BDA055E0058FDD0 /* Mover.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C27E731E1BD9FFB00058FDD0 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C27E731F1BD9FFB00058FDD0 /* Base */,
+			);
+			name = MainMenu.xib;
+			path = .;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C27E73221BD9FFB00058FDD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C27E73231BD9FFB00058FDD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C27E73251BD9FFB00058FDD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ModMove/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smileykeith.ModMove;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ModMove/ModMove-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C27E73261BD9FFB00058FDD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ModMove/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smileykeith.ModMove;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ModMove/ModMove-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C27E73121BD9FFB00058FDD0 /* Build configuration list for PBXProject "ModMove" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C27E73221BD9FFB00058FDD0 /* Debug */,
+				C27E73231BD9FFB00058FDD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C27E73241BD9FFB00058FDD0 /* Build configuration list for PBXNativeTarget "ModMove" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C27E73251BD9FFB00058FDD0 /* Debug */,
+				C27E73261BD9FFB00058FDD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C27E730F1BD9FFB00058FDD0 /* Project object */;
+}
