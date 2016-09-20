@@ -8,17 +8,17 @@ enum FlagState {
 }
 
 final class Observer {
-    private var monitor: AnyObject?
+    private var monitor: Any?
 
-    func startObserving(state: FlagState -> Void) {
-        self.monitor = NSEvent.addGlobalMonitorForEventsMatchingMask(.FlagsChangedMask) { event in
-            state(self.stateForFlags(event.modifierFlags))
+    func startObserving(state: @escaping (FlagState) -> Void) {
+        self.monitor = NSEvent.addGlobalMonitorForEvents(matching: .flagsChanged) { event in
+            state(self.state(for: event.modifierFlags))
         }
     }
 
-    private func stateForFlags(flags: NSEventModifierFlags) -> FlagState {
-        let hasMain = flags.contains(.ControlKeyMask) && flags.contains(.AlternateKeyMask)
-        let hasShift = flags.contains(.ShiftKeyMask)
+    private func state(for flags: NSEventModifierFlags) -> FlagState {
+        let hasMain = flags.contains(.control) && flags.contains(.option)
+        let hasShift = flags.contains(.shift)
 
         if hasMain && hasShift {
             return .Resize

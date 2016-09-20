@@ -5,34 +5,34 @@ final class Mover {
     var state: FlagState = .Ignore {
         didSet {
             if self.state != oldValue {
-                self.changedState(self.state)
+                self.changed(state: self.state)
             }
         }
     }
 
-    private var monitor: AnyObject?
+    private var monitor: Any?
     private var lastMousePosition: CGPoint?
     private var window: AccessibilityElement?
 
-    private func mouseMoved(handler: (window: AccessibilityElement, mouseDelta: CGPoint) -> Void) {
+    private func mouseMoved(handler: (_ window: AccessibilityElement, _ mouseDelta: CGPoint) -> Void) {
         let point = Mouse.currentPosition()
         if self.window == nil {
-            self.window = AccessibilityElement.systemWideElement.elementAtPoint(point)?.window()
+            self.window = AccessibilityElement.systemWideElement.element(at: point)?.window()
         }
 
         guard let window = self.window else {
             return
         }
 
-        let currentPid = NSRunningApplication.currentApplication().processIdentifier
-        if let pid = window.pid() where pid != currentPid {
-            NSRunningApplication(processIdentifier: pid)?.activateWithOptions(.ActivateIgnoringOtherApps)
+        let currentPid = NSRunningApplication.current().processIdentifier
+        if let pid = window.pid(), pid != currentPid {
+            NSRunningApplication(processIdentifier: pid)?.activate(options: .activateIgnoringOtherApps)
         }
 
         window.bringToFront()
         if let lastPosition = self.lastMousePosition {
             let mouseDelta = CGPoint(x: lastPosition.x - point.x, y: lastPosition.y - point.y)
-            handler(window: window, mouseDelta: mouseDelta)
+            handler(window, mouseDelta)
         }
 
         self.lastMousePosition = point
@@ -52,17 +52,17 @@ final class Mover {
         }
     }
 
-    private func changedState(state: FlagState) {
+    private func changed(state: FlagState) {
         self.removeMonitor()
 
         switch state {
         case .Resize:
-            self.monitor = NSEvent.addGlobalMonitorForEventsMatchingMask(.MouseMovedMask) { _ in
-                self.mouseMoved(self.resizeWindow)
+            self.monitor = NSEvent.addGlobalMonitorForEvents(matching: .mouseMoved) { _ in
+                self.mouseMoved(handler: self.resizeWindow)
             }
         case .Drag:
-            self.monitor = NSEvent.addGlobalMonitorForEventsMatchingMask(.MouseMovedMask) { _ in
-                self.mouseMoved(self.moveWindow)
+            self.monitor = NSEvent.addGlobalMonitorForEvents(matching: .mouseMoved) { _ in
+                self.mouseMoved(handler: self.moveWindow)
             }
         case .Ignore:
             self.lastMousePosition = nil

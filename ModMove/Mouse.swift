@@ -2,6 +2,6 @@ import CoreGraphics
 
 struct Mouse {
     static func currentPosition() -> CGPoint {
-        return CGEventGetLocation(CGEventCreate(nil))
+        return CGEvent(source: nil)!.location
     }
 }

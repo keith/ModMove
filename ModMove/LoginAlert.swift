@@ -5,7 +5,7 @@ private let SuppressionKey = "loginAlertSuppressionKey"
 
 struct LoginAlert {
     static func showAlertIfNeeded() {
-        if NSUserDefaults.standardUserDefaults().boolForKey(SuppressionKey) {
+        if UserDefaults.standard.bool(forKey: SuppressionKey) {
             return
         }
 
@@ -13,11 +13,11 @@ struct LoginAlert {
         alert.messageText = "Open ModMove at Login?"
         alert.informativeText = "Would you like to open ModMove at login? To disable it afterwards go to System Preferences -> Accounts"
         alert.showsSuppressionButton = true
-        alert.addButtonWithTitle("Open at Login")
-        alert.addButtonWithTitle("Cancel")
+        alert.addButton(withTitle: "Open at Login")
+        alert.addButton(withTitle: "Cancel")
         let response = alert.runModal()
         if alert.suppressionButton?.state == NSOnState {
-            NSUserDefaults.standardUserDefaults().setBool(true, forKey: SuppressionKey)
+            UserDefaults.standard.set(true, forKey: SuppressionKey)
         }
 
         if response == NSAlertFirstButtonReturn {
