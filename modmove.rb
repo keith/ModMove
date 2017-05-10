@@ -1,6 +1,6 @@
-cask :v1 => 'modmove' do
-  version '1.0.0'
-  sha256 '1d0cc13c38a4f76ae4f3a5d24c31553d4607c2d180ec1cdc93b43ee8787fe679'
+cask 'modmove' do
+  version '1.0.1'
+  sha256 'e26b49608d57659e4a7a22b3e48a10d6636d79022240ea555357ef9ff323f0c9'
 
   url "https://github.com/keith/modmove/releases/download/#{version}/ModMove.app.zip"
   appcast 'https://github.com/keith/modmove/releases.atom'
