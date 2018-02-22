@@ -16,11 +16,11 @@ struct LoginAlert {
         alert.addButton(withTitle: "Open at Login")
         alert.addButton(withTitle: "Cancel")
         let response = alert.runModal()
-        if alert.suppressionButton?.state == NSOnState {
+        if alert.suppressionButton?.state == .on {
             UserDefaults.standard.set(true, forKey: SuppressionKey)
         }
 
-        if response == NSAlertFirstButtonReturn {
+        if response == .alertFirstButtonReturn {
             LoginController.setOpensAtLogin(true)
         }
     }

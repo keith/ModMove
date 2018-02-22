@@ -24,7 +24,7 @@ final class Mover {
             return
         }
 
-        let currentPid = NSRunningApplication.current().processIdentifier
+        let currentPid = NSRunningApplication.current.processIdentifier
         if let pid = window.pid(), pid != currentPid {
             NSRunningApplication(processIdentifier: pid)?.activate(options: .activateIgnoringOtherApps)
         }

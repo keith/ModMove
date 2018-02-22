@@ -16,7 +16,7 @@ final class Observer {
         }
     }
 
-    private func state(for flags: NSEventModifierFlags) -> FlagState {
+    private func state(for flags: NSEvent.ModifierFlags) -> FlagState {
         let hasMain = flags.contains(.control) && flags.contains(.option)
         let hasShift = flags.contains(.shift)
 
