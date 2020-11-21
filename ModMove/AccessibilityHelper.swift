@@ -14,7 +14,7 @@ struct AccessibilityHelper {
         let alert = NSAlert()
         alert.messageText = "Enable Accessibility First"
         alert.informativeText = "Find the popup right behind this one, click \"Open System Preferences\" and enable ModMove. Then launch ModMove again."
-        alert.alertStyle = .warning
+        alert.alertStyle = .critical
         alert.addButton(withTitle: "Quit")
         alert.runModal()
         NSApp.terminate(nil)
