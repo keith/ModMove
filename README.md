@@ -18,10 +18,10 @@ There are 2 things ModMove can do:
 
 ## Installation
 
-With [`cask`](https://github.com/caskroom/homebrew-cask):
+With [`brew-cask`](https://github.com/caskroom/homebrew-cask):
 
 ```sh
-$ brew cask install modmove
+brew cask install keith/formulae/modmove
 ```
 
 Or manually by downloading the latest release from
