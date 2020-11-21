@@ -14,7 +14,7 @@ There are 2 things ModMove can do:
 
 ## Example
 
-![](https://raw.githubusercontent.com/keith/ModMove/gh-pages/modmove.gif)
+![](https://raw.githubusercontent.com/keith/ModMove/main/modmove.gif)
 
 ## Installation
 
