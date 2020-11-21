@@ -1,6 +1,6 @@
 # ModMove
 
-ModMove is a tiny OS X app that takes my favorite single piece of
+ModMove is a tiny macOS app that takes my favorite single piece of
 [HyperDock](https://bahoom.com/hyperdock/) and does just that.
 
 ## Usage
