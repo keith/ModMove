@@ -14,4 +14,9 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
             mover.state = state
         }
     }
+
+    func applicationShouldHandleReopen(_ sender: NSApplication, hasVisibleWindows flag: Bool) -> Bool {
+        sender.orderFrontStandardAboutPanel(nil)
+        return true
+    }
 }
