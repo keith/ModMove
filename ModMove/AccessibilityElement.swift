@@ -68,7 +68,7 @@ final class AccessibilityElement {
         }
 
         AXUIElementSetAttributeValue(self.elementRef,
-                                     NSAccessibilityAttributeName.main.rawValue as CFString,
+                                     NSAccessibility.Attribute.main.rawValue as CFString,
                                      true as CFTypeRef)
     }
 
@@ -98,13 +98,13 @@ final class AccessibilityElement {
         }
     }
 
-    private func rawValue(for attribute: NSAccessibilityAttributeName) -> AnyObject? {
+    private func rawValue(for attribute: NSAccessibility.Attribute) -> AnyObject? {
         var rawValue: AnyObject?
         let error = AXUIElementCopyAttributeValue(self.elementRef, attribute.rawValue as CFString, &rawValue)
         return error == .success ? rawValue : nil
     }
 
-    private func value(for attribute: NSAccessibilityAttributeName) -> Self? {
+    private func value(for attribute: NSAccessibility.Attribute) -> Self? {
         if let rawValue = self.rawValue(for: attribute), CFGetTypeID(rawValue) == AXUIElementGetTypeID() {
             return type(of: self).init(elementRef: rawValue as! AXUIElement)
         }
@@ -112,11 +112,11 @@ final class AccessibilityElement {
         return nil
     }
 
-    private func value(for attribute: NSAccessibilityAttributeName) -> String? {
+    private func value(for attribute: NSAccessibility.Attribute) -> String? {
         return self.rawValue(for: attribute) as? String
     }
 
-    private func value<T>(for attribute: NSAccessibilityAttributeName) -> T? {
+    private func value<T>(for attribute: NSAccessibility.Attribute) -> T? {
         if let rawValue = self.rawValue(for: attribute), CFGetTypeID(rawValue) == AXValueGetTypeID() {
             return (rawValue as! AXValue).toValue()
         }
