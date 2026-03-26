@@ -1,3 +1,4 @@
+import ApplicationServices
 import Foundation
 
 extension AXValue {
